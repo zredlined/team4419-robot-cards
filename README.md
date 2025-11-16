@@ -16,41 +16,23 @@ This is an onboarding project where you'll:
 - Practice the same workflow we use for actual robot code
 - See your card appear in our team gallery!
 
-## Workshop Instructions
+## Quick Start (Recommended for Workshop)
 
-### Step 1: Get the Code
+**The easiest way - works on any device, no downloads needed!**
 
-**Option A: Clone the repository (if you have Git installed)**
-```bash
-git clone https://github.com/rewind4419/team4419-robot-cards.git
-cd team4419-robot-cards
-```
+### Step 1: Open the Template
 
-**Option B: Use GitHub.dev (Chromebook-friendly!)**
-1. Go to the repository on GitHub
-2. Press the `.` key (period) on your keyboard
-3. This opens a browser-based VS Code editor - no installation needed!
+1. Go to [`cards/template.yaml`](cards/template.yaml) in this repo
+2. Click the file to view it
+3. Copy the entire contents
 
-### Step 2: Create Your Branch
+### Step 2: Create Your Card File
 
-Branches let you work on your own changes without affecting the main code.
-
-```bash
-git checkout -b add-your-username-card
-```
-
-Replace `your-username` with your actual GitHub username!
-
-### Step 3: Create Your Robot Card
-
-1. Copy the template:
-   ```bash
-   cp cards/template.yaml cards/your-username.yaml
-   ```
-
-2. Open `cards/your-username.yaml` in your editor
-
-3. Fill in your dream robot design:
+1. Go back to the main repo page
+2. Click **"Add file"** → **"Create new file"**
+3. Name your file: `cards/your-username.yaml` (replace with your actual GitHub username)
+4. Paste the template contents
+5. Edit the fields with your robot design:
    - **username**: Your GitHub username
    - **robot_name**: Give your robot a cool name (80s references encouraged!)
    - **year**: Current competition year (2026)
@@ -59,58 +41,152 @@ Replace `your-username` with your actual GitHub username!
    - **why_cool**: Why is your design awesome?
    - **design_philosophy**: Your approach to robot design
 
-### Step 4: Test Locally (Optional - Skip on Chromebooks)
+### Step 3: Commit to a New Branch
 
-If you have Python installed, you can preview your card:
+1. Scroll down to **"Commit new file"**
+2. GitHub will say: *"You can't commit to main because it's protected"*
+3. Select: **"Create a new branch for this commit and start a pull request"**
+4. Name your branch: `add-your-username-card`
+5. Click **"Propose new file"**
+
+### Step 4: Create Pull Request
+
+1. GitHub will take you to the Pull Request page
+2. Title: `Add robot card for @your-username`
+3. Add a brief description of your robot (optional)
+4. Click **"Create pull request"**
+
+### Step 5: Check That Your Card Works!
+
+**Important:** After creating your PR, make sure the build passes!
+
+1. On your Pull Request page, look for the **"Checks"** section
+2. You should see `generate-and-deploy` running (yellow circle)
+3. Wait for it to complete (should take ~30 seconds)
+4. **Look for a green checkmark ✓** - This means your YAML file is valid!
+5. **If you see a red X ✗** - Click "Details" to see what's wrong (usually a formatting issue)
+
+**Don't submit for review until you see the green checkmark!** This ensures your card will work when merged.
+
+### Step 6: Wait for Review
+
+A Programming Lead or Mentor will review your card and approve it!
+
+### Step 7: Merge & See It Live!
+
+Once approved, click **"Merge pull request"** and your card will appear on the live gallery within a couple minutes:
+
+**https://rewind4419.github.io/team4419-robot-cards/**
+
+---
+
+## Advanced: Working Locally
+
+**For students who want to preview their card before submitting:**
+
+This requires some setup, but lets you see exactly how your card will look before creating a PR.
+
+### What You'll Need
+
+1. **Git** - Download [GitHub Desktop](https://desktop.github.com/) (easiest for beginners)
+2. **IDE** - Download [VS Code](https://code.visualstudio.com/)
+3. **Python** - Download [Python 3.7+](https://www.python.org/downloads/)
+
+### Local Workflow
+
+**Step 1: Clone the Repository**
+
+Using GitHub Desktop:
+1. Open GitHub Desktop
+2. File → Clone Repository
+3. Search for `rewind4419/team4419-robot-cards`
+4. Choose where to save it locally
+5. Click "Clone"
+
+Using command line:
+```bash
+git clone https://github.com/rewind4419/team4419-robot-cards.git
+cd team4419-robot-cards
+```
+
+**Step 2: Create Your Branch**
+
+Using GitHub Desktop:
+1. Click "Current Branch" dropdown
+2. Click "New Branch"
+3. Name it: `add-your-username-card`
+4. Click "Create Branch"
+
+Using command line:
+```bash
+git checkout -b add-your-username-card
+```
+
+**Step 3: Create Your Robot Card**
+
+1. Open the project folder in VS Code
+2. Copy `cards/template.yaml` to `cards/your-username.yaml`
+3. Fill in your robot design (see fields in template)
+
+**Step 4: Preview Your Card Locally**
+
+This is the cool part - see your card before submitting!
 
 ```bash
-# Install dependencies
+# Install dependencies (first time only)
 pip install -r requirements.txt
 
 # Generate the gallery
 python generate.py
 
-# Open generated/index.html in your browser to see your card!
+# Open the generated file
+open generated/index.html     # Mac
+start generated/index.html    # Windows
+xdg-open generated/index.html # Linux
 ```
 
-**Chromebook users**: Don't worry! You can skip this step and see your card after it's merged.
+You should see your robot card in the gallery!
 
-### Step 5: Commit Your Changes
+**Step 5: Commit Your Changes**
 
-Save your work with a commit:
+Using GitHub Desktop:
+1. You'll see `cards/your-username.yaml` in the "Changes" list
+2. Add a commit message: `Add robot card for your-username`
+3. Click "Commit to add-your-username-card"
 
+Using command line:
 ```bash
-# Add only your YAML file
 git add cards/your-username.yaml
-
-# Commit with a descriptive message
 git commit -m "Add robot card for your-username"
 ```
 
-### Step 6: Push Your Branch
+**Step 6: Push to GitHub**
 
-Send your branch to GitHub:
+Using GitHub Desktop:
+1. Click "Push origin" button at the top
 
+Using command line:
 ```bash
 git push -u origin add-your-username-card
 ```
 
-### Step 7: Create a Pull Request
+**Step 7: Create Pull Request**
 
-1. Go to the repository on GitHub
-2. Click "Pull requests" → "New pull request"
-3. Select your branch from the dropdown
-4. Click "Create pull request"
-5. Add a title like "Add robot card for @your-username"
-6. Submit and wait for a mentor to review!
+1. GitHub Desktop will show "Create Pull Request" button - click it
+2. Or go to https://github.com/rewind4419/team4419-robot-cards
+3. Click the yellow "Compare & pull request" button
+4. Title: `Add robot card for @your-username`
+5. Click "Create pull request"
 
-## What Happens After Your PR is Merged?
+**Step 8: Check the Build**
 
-Once a mentor approves and merges your pull request:
-1. A GitHub Action automatically runs
-2. It generates a new HTML gallery with ALL team cards
-3. Your robot design appears on the team gallery page!
-4. You're officially part of the programming team!
+Wait for the green checkmark ✓ in the "Checks" section to confirm your YAML is valid!
+
+**Step 9: Wait for Review & Merge**
+
+Same as the quick start method - a Programming Lead will review and approve!
+
+---
 
 ## Tips for Success
 
