@@ -53,7 +53,7 @@ Replace `your-username` with your actual GitHub username!
 3. Fill in your dream robot design:
    - **username**: Your GitHub username
    - **robot_name**: Give your robot a cool name (80s references encouraged!)
-   - **year**: Current competition year (2025)
+   - **year**: Current competition year (2026)
    - **signature_mechanism**: What makes your robot special?
    - **ascii_art**: Draw your robot with text characters (use AI to help!)
    - **why_cool**: Why is your design awesome?
