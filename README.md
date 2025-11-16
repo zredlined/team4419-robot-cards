@@ -2,6 +2,12 @@
 
 Welcome to the Team 4419 programming team! This project is your first step into learning how we use Git and GitHub to collaborate on code.
 
+## 🎨 View the Live Gallery
+
+**See all team robot cards here:** https://rewind4419.github.io/team4419-robot-cards/
+
+The gallery automatically updates when new cards are merged to main!
+
 ## What This Is
 
 This is an onboarding project where you'll:
@@ -16,7 +22,7 @@ This is an onboarding project where you'll:
 
 **Option A: Clone the repository (if you have Git installed)**
 ```bash
-git clone https://github.com/zredlined/team4419-robot-cards.git
+git clone https://github.com/rewind4419/team4419-robot-cards.git
 cd team4419-robot-cards
 ```
 
