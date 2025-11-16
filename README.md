@@ -20,6 +20,10 @@ This is an onboarding project where you'll:
 
 **The easiest way - works on any device, no downloads needed!**
 
+### Step 0: 🚀 Share your GitHub username in #programming
+
+This needs to happen first so we can add you to the programming team! Once you’re added, you can start with Step 1 below.
+
 ### Step 1: Open the Template
 
 1. Go to [`cards/template.yaml`](cards/template.yaml) in this repo
@@ -30,7 +34,7 @@ This is an onboarding project where you'll:
 
 1. Go back to the main repo page
 2. Click **"Add file"** → **"Create new file"**
-3. Name your file: `cards/your-username.yaml` (replace with your actual GitHub username)
+3. Name your file: `cards/your-username.yaml` (replace with your actual GitHub username- e.g. cards/zredlined.yaml)
 4. Paste the template contents
 5. Edit the fields with your robot design:
    - **username**: Your GitHub username
