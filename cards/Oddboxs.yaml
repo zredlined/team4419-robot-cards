@@ -1,15 +1,14 @@
-# Your robot design card
-username: "OddBoxs"
-robot_name: "Gleeb"
+username: OddBoxs
+robot_name: Gleeb
 year: 2026
-signature_mechanism: "Looks silly"
+signature_mechanism: Looks silly
 ascii_art: |
-    /``\____/''\
+  - /``\____/''\
    / ◉-------◉  \
    |            |
   /              \
   |_|   |--|   |_|
     |___|  |___|
        0   0
-why_cool: "I made it awesome"
-design_philosophy: "Its what my mind said to do."
+why_cool: I made it awesome
+design_philosophy: Its what my mind said to do.
